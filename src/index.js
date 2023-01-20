@@ -138,7 +138,7 @@ bot.onText(/\/login/, async(msg, match) => {
       
     // -----Delete a task-----
 bot.onText(/\/delete (.*)/,async (msg, match) => {
-    const chatId = msg.chat.id;c
+    const chatId = msg.chat.id;
     try {
         const title = match[1];
         let task = await CheckTaskExist(chatId,title);
